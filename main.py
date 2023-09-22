@@ -13,7 +13,6 @@ st.write(website_description)
 st.subheader("Our Team")
 
 content = pandas.read_csv("data.csv")
-print(type(content))
 
 col1, col2, col3 = st.columns(3, gap="large")
 
@@ -37,9 +36,3 @@ with col3:
             f"{data['first name'].title()} {data['last name'].title()} ")
         st.write(data["role"])
         st.image(f"assets/images/{data['image']}")
-
-
-# 0 - 3 [0, 1, 2]
-# 3 - 6 [3, 4, 5]
-# 6 - 9 [6, 7, 8]
-# 9 - 12[9, 10, 11]
